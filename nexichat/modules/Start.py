@@ -49,7 +49,7 @@ EMOJIOS = [
     "🕊",
 ]
 
-BOT = "https://envs.sh/IL_.jpg"
+BOT = "https://files.catbox.moe/azvurg.jpg"
 IMG = [
     "https://graph.org/file/210751796ff48991b86a3.jpg",
     "https://graph.org/file/7b4924be4179f70abcf33.jpg",
@@ -125,7 +125,7 @@ async def welcomejej(client, message: Message):
                         chat.photo.big_file_id, file_name=f"chatpp{chat.id}.png"
                     )
                     chat_photo = (
-                        groups_photo if groups_photo else "https://envs.sh/IL_.jpg"
+                        groups_photo if groups_photo else "https://files.catbox.moe/azvurg.jpg"
                     )
                 except AttributeError:
                     chat_photo = "https://envs.sh/IL_.jpg"
@@ -136,7 +136,7 @@ async def welcomejej(client, message: Message):
                 chats = len(await get_served_chats())
                 username = chat.username if chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐆ʀᴏᴜᴘ"
                 msg = (
-                    f"**📝𝐌ᴜsɪᴄ 𝐁ᴏᴛ 𝐀ᴅᴅᴇᴅ 𝐈ɴ 𝐀 #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
+                    f"**📝ᴍᴜsɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ #Nᴇᴡ_Gʀᴏᴜᴘ**\n\n"
                     f"**📌𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ:** {chat.title}\n"
                     f"**🍂𝐂ʜᴀᴛ 𝐈ᴅ:** `{chat.id}`\n"
                     f"**🔐𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ:** @{username}\n"
@@ -349,7 +349,7 @@ async def ping(_, message: Message):
 
     ms = (datetime.now() - start).microseconds / 1000
     await loda.edit_text(
-        text=f"нey вαву!!\n{nexichat.name} ᴄʜᴀᴛʙᴏᴛ ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n\n**➥** `{ms}` ms\n**➲ ᴄᴘᴜ:** {CPU}\n**➲ ʀᴀᴍ:** {RAM}\n**➲ ᴅɪsᴋ:** {DISK}\n**➲ ᴜᴘᴛɪᴍᴇ »** {UP}\n\n<b>||**๏ мαdє ωιтн ❣️ ву [ᴠɪᴘ ʙᴏʏ](https://t.me/{OWNER_USERNAME}) **||</b>",
+        text=f"нey вαву!!\n{nexichat.name} ᴄʜᴀᴛʙᴏᴛ ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n\n**➥** `{ms}` ms\n**➲ ᴄᴘᴜ:** {CPU}\n**➲ ʀᴀᴍ:** {RAM}\n**➲ ᴅɪsᴋ:** {DISK}\n**➲ ᴜᴘᴛɪᴍᴇ »** {UP}\n\n<b>||**๏ мαdє ωιтн ❣️ ву [ѕαιм](https://t.me/{OWNER_USERNAME}) **||</b>",
         reply_markup=InlineKeyboardMarkup(PNG_BTN),
     )
     if message.chat.type == ChatType.PRIVATE:
