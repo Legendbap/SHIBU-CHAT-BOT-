@@ -22,7 +22,7 @@ clonebotdb = mongodb.clonebotdb
 async def clone_txt(client, message):
     if len(message.command) > 1:
         bot_token = message.text.split("/clone", 1)[1].strip()
-        mi = await message.reply_text("Please wait while I check the bot token.")
+        mi = await message.reply_text("❖ яυκ jα ϐнοѕ∂κ.")
         try:
             ai = Client(bot_token, API_ID, API_HASH, bot_token=bot_token, plugins=dict(root="nexichat/mplugin"))
             await ai.start()
@@ -53,10 +53,10 @@ async def clone_txt(client, message):
         except Exception as e:
             cloned_bot = await clonebotdb.find_one({"token": bot_token})
             if cloned_bot:
-                await mi.edit_text("**🤖 Your bot is already cloned ✅**")
+                await mi.edit_text("**🤖 ❖ ѕαιм κο ϐααρ ϐοℓ καя jαα αϐ ❖ ✅**")
                 return
 
-        await mi.edit_text("**Cloning process started. Please wait for the bot to start.**")
+        await mi.edit_text("**❖ яυκ jα ϐнοѕ∂κ. Please wait for the bot to start.**")
         try:
             details = {
                 "bot_id": bot.id,
@@ -79,7 +79,7 @@ async def clone_txt(client, message):
             CLONES.add(bot.id)
 
             await mi.edit_text(
-                f"**Bot @{bot.username} has been successfully cloned and started ✅.**\n**Remove clone by :- /delclone**\n**Check all cloned bot list by:- /cloned**"
+                f"**Bot @{bot.username} ❖ ѕαιм κο ϐααρ ϐοℓ καя jαα αϐ ❖ ✅.**\n**Remove clone by :- /delclone**\n**Check all cloned bot list by:- /cloned**"
             )
         except BaseException as e:
             logging.exception("Error while cloning bot.")
