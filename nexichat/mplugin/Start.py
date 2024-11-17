@@ -52,7 +52,7 @@ EMOJIOS = [
     "🕊",
 ]
 
-BOT = "https://envs.sh/IL_.jpg"
+BOT = "https://files.catbox.moe/azvurg.jpg"
 IMG = [
     "https://graph.org/file/210751796ff48991b86a3.jpg",
     "https://graph.org/file/7b4924be4179f70abcf33.jpg",
@@ -148,7 +148,7 @@ async def welcomejej(client, message: Message):
                 count = await client.get_chat_members_count(chat.id)
                 username = chat.username if chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐆ʀᴏᴜᴘ"
                 msg = (
-                    f"**📝𝐌ᴜsɪᴄ 𝐁ᴏᴛ 𝐀ᴅᴅᴇᴅ 𝐈ɴ 𝐀 #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
+                    f"**📝ᴍᴜsɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ #Nᴇᴡ_Gʀᴏᴜᴘ**\n\n"
                     f"**📌𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ:** {chat.title}\n"
                     f"**🍂𝐂ʜᴀᴛ 𝐈ᴅ:** `{chat.id}`\n"
                     f"**🔐𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ:** @{username}\n"
@@ -268,7 +268,7 @@ async def start(client: Client, m: Message):
         )
         
         animation_steps = [
-            "⚡ᴅ", "⚡ᴅι", "⚡ᴅιи", "⚡ᴅιиg", "⚡ᴅιиg ᴅ", "⚡ᴅιиg ᴅσ", "⚡ᴅιиg ᴅσи", "⚡ᴅιиg ᴅσиg", "⚡ᴅιиg ᴅσиg ꨄ︎", "⚡sᴛαятɪɴɢ..."
+            "⚡s", "⚡sᴀ", "⚡sᴀɪ", "⚡sᴀɪᴍ", "⚡sᴀɪᴍ ᴄ", "⚡sᴀɪᴍ ᴄᴏ", "⚡sᴀɪᴍ ᴄᴏᴍ", "⚡sᴀɪᴍ ᴄᴏᴍᴇ", "⚡sᴀɪᴍ ᴄᴏᴍᴇ ꨄ︎", "⚡sᴛαятɪɴɢ..."
         ]
 
         for step in animation_steps:
