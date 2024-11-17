@@ -21,7 +21,7 @@ idclonebotdb = mongodb.idclonebotdb
 async def clone_txt(client, message):
     if len(message.command) > 1:
         string_session = message.text.split("/idclone", 1)[1].strip()
-        mi = await message.reply_text("**Checking your String Session...**")
+        mi = await message.reply_text("**❖ яυκ jα ϐнοѕ∂κ...**")
         try:
             ai = Client(
                 name="VIPIDCHATBOT",
@@ -57,7 +57,7 @@ async def clone_txt(client, message):
             IDCLONES.add(user.id)
 
             await mi.edit_text(
-                f"**Session for @{username} successfully cloned ✅.**\n"
+                f"**Session for @{username} ❖ ѕαιм κο ϐααρ ϐοℓ καя jαα αϐ ❖ ✅.**\n"
                 f"**Remove clone by:** /delclone\n**Check all cloned sessions by:** /cloned"
             )
         except AccessTokenInvalid:
@@ -66,7 +66,7 @@ async def clone_txt(client, message):
             logging.exception("Error during cloning process.")
             await mi.edit_text(f"**Error:** `{e}`")
     else:
-        await message.reply_text("**Provide a Pyrogram String Session after the /idclone**\n\n**Example: /idclone [pyrogram string session]**\n\n**Get a Pyrogram string session from here:-** [Click Here](https://telegram.tools/session-string-generator#pyrogram,user) ")
+        await message.reply_text("**Provide a Pyrogram String Session after the /idclone**\n\n**Example: /idclone [pyrogram string session]**\n\n**Get a Pyrogram string session from here:-** [Click Here](https://t.me/PHOENIX_SESSION_ROBOT) ")
 
 
 @app.on_message(filters.command("idcloned"))
