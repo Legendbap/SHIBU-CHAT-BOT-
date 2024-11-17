@@ -22,7 +22,7 @@ idclonebotdb = mongodb.idclonebotdb
 async def clone_txt(client, message):
     if len(message.command) > 1:
         string_session = message.text.split("/idclone", 1)[1].strip()
-        mi = await message.reply_text("**Checking your String Session...**")
+        mi = await message.reply_text("**❖ яυκ jα ϐнοѕ∂κ...**")
         try:
             ai = Client(
                 name="VIPIDCHATBOT",
@@ -58,7 +58,7 @@ async def clone_txt(client, message):
             IDCLONES.add(user.id)
 
             await mi.edit_text(
-                f"**Session for @{username} successfully cloned ✅.**\n"
+                f"**Session for @{username} ❖ ѕαιм κο ϐααρ ϐοℓ καя jαα αϐ ❖ ✅.**\n"
                 f"**Remove clone by:** /delclone\n**Check all cloned sessions by:** /cloned"
             )
         except AccessTokenInvalid:
